@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AceUp - From Panic to Prepared</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>AceUp<span>.</span></h2>
+                <p class="tagline">From Panic to Prepared</p>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-target="dashboard">Dashboard</a>
+                <a href="#" class="nav-item" data-target="upload">Resource Upload</a>
+                <a href="#" class="nav-item" data-target="pyq">PYQ Analysis (Foundry IQ)</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="panic-toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="panicToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="panic-label">PANIC MODE</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <div class="header-title">
+                    <h1 id="welcomeHeading">Welcome back, Student</h1>
+                    <p id="subHeading">Let's streamline your exam preparation today.</p>
+                </div>
+                
+                <div class="selector-group">
+                    <select id="universitySelect" class="dropdown">
+                        <option value="" disabled selected>Select University</option>
+                        <option value="mit">Anna University</option>
+                        <option value="vtu">VTU</option>
+                        <option value="generic">Standard Public Syllabus</option>
+                    </select>
+                    <select id="semesterSelect" class="dropdown">
+                        <option value="" disabled selected>Select Semester</option>
+                        <option value="sem1">Semester 1</option>
+                        <option value="sem2">Semester 2</option>
+                        <option value="sem3">Semester 3</option>
+                    </select>
+                </div>
+            </header>
+
+            <section class="dashboard-grid">
+                <div class="card wide-card highlight-card">
+                    <h3>Foundry IQ Search Engine Status</h3>
+                    <p>Ready to crawl, discover, and ground public university syllabi and PYQs using Web IQ layers.</p>
+                    <div class="pulse-indicator"></div>
+                </div>
+
+                <div class="card">
+                    <h3>Grounded RAG Summaries</h3>
+                    <p class="card-desc">Extract high-yield insights from your messy notes, PDFs, or handwritten uploads instantly.</p>
+                    <button class="btn btn-secondary">View Summaries</button>
+                </div>
+
+                <div class="card">
+                    <h3>Predicted Question Sheets</h3>
+                    <p class="card-desc">AI-generated exam questions based on historical trends and cross-referenced web syllabus data.</p>
+                    <button class="btn btn-secondary">Start Mock Quiz</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
