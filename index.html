@@ -1,80 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AceUp - From Panic to Prepared</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AceUp | AI-powered exam preparation</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <div class="app-container">
-        <aside class="sidebar">
-            <div class="logo-container">
-                <h2>AceUp<span>.</span></h2>
-                <p class="tagline">From Panic to Prepared</p>
-            </div>
-            <nav class="nav-menu">
-                <a href="#" class="nav-item active" data-target="dashboard">Dashboard</a>
-                <a href="#" class="nav-item" data-target="upload">Resource Upload</a>
-                <a href="#" class="nav-item" data-target="pyq">PYQ Analysis (Foundry IQ)</a>
-            </nav>
-            <div class="sidebar-footer">
-                <div class="panic-toggle-container">
-                    <label class="switch">
-                        <input type="checkbox" id="panicToggle">
-                        <span class="slider round"></span>
-                    </label>
-                    <span class="panic-label">PANIC MODE</span>
-                </div>
-            </div>
-        </aside>
+  <div class="page-shell">
+    <header class="topbar glass-card reveal">
+      <a class="brand" href="index.html">AceUp</a>
+      <p class="tagline">From Panic to Prepared.</p>
+      <nav class="nav-links"><a href="about.html">About</a><a href="resource-selection.html">Resources</a></nav>
+      <a class="ghost-link" href="#features">Learn More</a>
+    </header>
 
-        <main class="main-content">
-            <header class="content-header">
-                <div class="header-title">
-                    <h1 id="welcomeHeading">Welcome back, Student</h1>
-                    <p id="subHeading">Let's streamline your exam preparation today.</p>
-                </div>
-                
-                <div class="selector-group">
-                    <select id="universitySelect" class="dropdown">
-                        <option value="" disabled selected>Select University</option>
-                        <option value="mit">Anna University</option>
-                        <option value="vtu">VTU</option>
-                        <option value="generic">Standard Public Syllabus</option>
-                    </select>
-                    <select id="semesterSelect" class="dropdown">
-                        <option value="" disabled selected>Select Semester</option>
-                        <option value="sem1">Semester 1</option>
-                        <option value="sem2">Semester 2</option>
-                        <option value="sem3">Semester 3</option>
-                    </select>
-                </div>
-            </header>
+    <main class="hero-grid">
+      <section class="hero-copy glass-card reveal">
+        <p class="eyebrow">AI-powered exam preparation</p>
+        <h1>Welcome to AceUp, your AI-powered exam companion designed to help students spend less time searching and more time learning.</h1>
+        <p class="lead">Discover resources, upload your notes, and generate personalized study materials—all in one place.</p>
 
-            <section class="dashboard-grid">
-                <div class="card wide-card highlight-card">
-                    <h3>Foundry IQ Search Engine Status</h3>
-                    <p>Ready to crawl, discover, and ground public university syllabi and PYQs using Web IQ layers.</p>
-                    <div class="pulse-indicator"></div>
-                </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#features">Get Started</a>
+          <a class="btn btn-secondary" href="#features">Learn More</a>
+        </div>
 
-                <div class="card">
-                    <h3>Grounded RAG Summaries</h3>
-                    <p class="card-desc">Extract high-yield insights from your messy notes, PDFs, or handwritten uploads instantly.</p>
-                    <button class="btn btn-secondary">View Summaries</button>
-                </div>
+        <ul class="mini-points">
+          <li>Smart summaries and focused revision ideas</li>
+          <li>Fast uploads for notes, PDFs, and syllabus materials</li>
+          <li>Calm, distraction-free study flow for your next exam</li>
+        </ul>
+      </section>
 
-                <div class="card">
-                    <h3>Predicted Question Sheets</h3>
-                    <p class="card-desc">AI-generated exam questions based on historical trends and cross-referenced web syllabus data.</p>
-                    <button class="btn btn-secondary">Start Mock Quiz</button>
-                </div>
-            </section>
-        </main>
-    </div>
+      <aside class="showcase-panel reveal">
+        <article class="glass-card stat-card">
+          <p class="stat-label">Study flow</p>
+          <h2>90%</h2>
+          <p>Less time searching, more time learning.</p>
+        </article>
 
-    <script src="script.js"></script>
+        <article class="glass-card feature-card">
+          <h3>What AceUp helps with</h3>
+          <ul>
+            <li>Upload notes and PDFs</li>
+            <li>Track summaries and high-yield topics</li>
+            <li>Create focused revision plans in one place</li>
+          </ul>
+        </article>
+
+        <article class="glass-card mini-card">
+          <div class="pulse-dot"></div>
+          <strong>Live prep mode</strong>
+          <span>AI-guided study support with a bright, startup-style feel.</span>
+        </article>
+      </aside>
+    </main>
+
+    <section id="features" class="feature-grid">
+      <article class="glass-card feature-box reveal">
+        <h3>Smart resources</h3>
+        <p>Find public syllabi, PYQs, and curated references from one calm dashboard.</p>
+      </article>
+      <article class="glass-card feature-box reveal">
+        <h3>Personalized study</h3>
+        <p>Generate summaries and revision prompts tailored to your notes and goals.</p>
+      </article>
+      <article class="glass-card feature-box reveal">
+        <h3>Calm workflow</h3>
+        <p>Built with a modern dark-mode layout, soft gradients, and subtle motion.</p>
+      </article>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

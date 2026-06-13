@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AceUp | Resource Selection</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar glass-card reveal">
+      <a class="brand" href="index.html">AceUp</a>
+      <nav class="nav-links"><a href="setup-dashboard.html">Setup</a><a href="processing-screen.html">Processing</a><a href="results-dashboard.html">Results</a><a href="about.html">About</a></nav>
+      <a class="ghost-link" href="panic-mode.html">Panic Mode</a>
+    </header>
+
+    <main class="dashboard-shell">
+      <section class="dashboard-hero glass-card reveal">
+        <p class="eyebrow">Resource selection</p>
+        <h1>Choose how you want to prepare.</h1>
+        <p class="lead">Pick the best resource mode for your study session. AceUp supports fast online discovery, file uploads, or a hybrid approach for complete preparation.</p>
+      </section>
+
+      <section class="resource-grid">
+        <article class="glass-card resource-card reveal"> 
+          <div class="resource-icon">🌐</div>
+          <div class="resource-copy">
+            <h2>Smart Search</h2>
+            <p>Automatically search online for syllabi, previous year question papers, and study materials.</p>
+          </div>
+          <button class="btn btn-secondary" type="button">Use Smart Search</button>
+        </article>
+
+        <article class="glass-card resource-card reveal">
+          <div class="resource-icon">📁</div>
+          <div class="resource-copy">
+            <h2>Upload Files</h2>
+            <p>Upload PDFs, images, handwritten notes, and question papers.</p>
+          </div>
+          <button class="btn btn-secondary" type="button">Upload Files</button>
+        </article>
+
+        <article class="glass-card resource-card resource-card--featured reveal">
+          <span class="badge">Recommended</span>
+          <div class="resource-icon">⭐</div>
+          <div class="resource-copy">
+            <h2>Hybrid Mode</h2>
+            <p>Combine online resources with uploaded files for the best study experience.</p>
+          </div>
+          <button class="btn btn-primary" type="button">Choose Hybrid Mode</button>
+        </article>
+      </section>
+
+      <section class="upload-panel glass-card reveal">
+        <div class="upload-header">
+          <div>
+            <p class="mini-label">Upload workspace</p>
+            <h2>Drag and drop your files here</h2>
+            <p class="panel-copy">Accepts PDF files, images, question papers, and notes. Drop files into the area or browse from your device.</p>
+          </div>
+          <span class="chip">Supports PDFs, images, notes & QPs</span>
+        </div>
+
+        <label id="dropzone" class="dropzone" for="fileInput">
+          <input id="fileInput" type="file" multiple accept=".pdf,image/*,.jpg,.jpeg,.png,.webp,.txt,.doc,.docx" />
+          <div class="dropzone-icon">⬆️</div>
+          <strong>Drop files here</strong>
+          <span>or click to browse</span>
+        </label>
+
+        <div id="uploadedFiles" class="upload-grid"></div>
+      </section>
+
+      <section class="quiz-panel glass-card reveal">
+        <div class="quiz-header">
+          <div>
+            <p class="mini-label">Quick quiz</p>
+            <h2>Test your prep instincts</h2>
+            <p class="panel-copy">Answer this mini quiz and see your score update instantly.</p>
+          </div>
+          <div class="score-box" id="scoreBox">Score: 0 / 4</div>
+        </div>
+
+        <div class="progress-track quiz-progress"><div class="progress-fill" id="quizProgress"></div></div>
+
+        <article class="quiz-card">
+          <p class="mini-label">Question</p>
+          <h3 id="quizQuestion">Which resource type helps most with high-yield revision?</h3>
+          <div class="quiz-choices" id="quizChoices"></div>
+          <div class="quiz-footer">
+            <button class="btn btn-primary" id="submitQuiz" type="button">Submit</button>
+            <button class="btn btn-secondary" id="nextQuiz" type="button">Next Question</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="glass-card panel-card reveal">
+          <p class="mini-label">Why this works</p>
+          <h2>Modern, focused resource flow</h2>
+          <div class="info-stack">
+            <article class="mini-info-card"><h3>Fast discovery</h3><p>Find relevant study material in seconds with smart search.</p></article>
+            <article class="mini-info-card"><h3>Flexible uploads</h3><p>Bring in your own PDFs, notes, or exam papers with ease.</p></article>
+            <article class="mini-info-card"><h3>Best of both</h3><p>Hybrid Mode blends online and personal resources for richer prep.</p></article>
+          </div>
+        </article>
+
+        <article class="glass-card panel-card reveal">
+          <p class="mini-label">Selection summary</p>
+          <h2>Ready to process</h2>
+          <div class="status-grid">
+            <article class="status-chip"><strong>3</strong><span>Modes available</span></article>
+            <article class="status-chip"><strong>98%</strong><span>Fit confidence</span></article>
+            <article class="status-chip"><strong>6 min</strong><span>Avg. processing time</span></article>
+          </div>
+          <div class="button-row"><a class="btn btn-primary" href="processing-screen.html">Continue</a></div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

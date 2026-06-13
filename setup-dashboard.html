@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AceUp | Setup Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar glass-card reveal">
+      <a class="brand" href="index.html">AceUp</a>
+      <nav class="nav-links"><a href="resource-selection.html">Resource Selection</a><a href="processing-screen.html">Processing</a><a href="results-dashboard.html">Results</a></nav>
+      <a class="ghost-link" href="panic-mode.html">Panic Mode</a>
+    </header>
+
+    <main class="dashboard-shell">
+      <section class="dashboard-hero glass-card reveal">
+        <p class="eyebrow">Setup dashboard</p>
+        <h1>Set your exam context before you begin.</h1>
+        <p class="lead">University, semester, and subject fields help AceUp tailor the prep flow for your hackathon demo.</p>
+        <div class="quick-badges"><span>Smart form</span><span>Rounded inputs</span><span>Fast onboarding</span></div>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="glass-card panel-card reveal">
+          <p class="mini-label">Study profile</p>
+          <h2>Enter your details</h2>
+          <form class="form-grid">
+            <label class="field-group"><span>University name</span><input type="text" placeholder="Anna University" /></label>
+            <label class="field-group"><span>Semester</span><input type="text" placeholder="Semester 5" /></label>
+            <label class="field-group"><span>Subject</span><input type="text" placeholder="Data Structures" /></label>
+            <label class="field-group"><span>Exam date</span><input type="date" /></label>
+            <div class="button-row"><a class="btn btn-primary" href="resource-selection.html">Continue</a><button class="btn btn-secondary" type="button">Save draft</button></div>
+          </form>
+        </article>
+
+        <article class="glass-card panel-card reveal">
+          <p class="mini-label">Why it matters</p>
+          <h2>Personalized prep</h2>
+          <div class="info-stack">
+            <article class="mini-info-card"><h3>Context-driven</h3><p>Every next page reacts to the study profile you enter here.</p></article>
+            <article class="mini-info-card"><h3>Quick review</h3><p>Track university, subject, and exam timing in one focused panel.</p></article>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

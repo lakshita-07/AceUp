@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AceUp | Flashcards</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar glass-card reveal">
+      <a class="brand" href="index.html">AceUp</a>
+      <p class="tagline">Interactive revision cards.</p>
+      <a class="ghost-link" href="results-dashboard.html">Results</a>
+    </header>
+
+    <main class="dashboard-shell">
+      <section class="dashboard-hero glass-card reveal">
+        <p class="eyebrow">Flashcard mode</p>
+        <h1>Flip, review, and move through your cards.</h1>
+        <p class="lead">Click any card to flip between the question and answer. Use the buttons to move through the set with a smooth, modern experience.</p>
+      </section>
+
+      <section class="flashcard-wrap reveal">
+        <article class="flashcard glass-card" id="flashcard">
+          <div class="flashcard-face flashcard-front">
+            <p class="mini-label">Card 1</p>
+            <h2 id="flashQuestion">What is the main goal of active recall?</h2>
+            <p>Click to reveal the answer.</p>
+          </div>
+          <div class="flashcard-face flashcard-back">
+            <p class="mini-label">Answer</p>
+            <h2 id="flashAnswer">To strengthen memory by recalling information without looking at notes.</h2>
+          </div>
+        </article>
+
+        <div class="flashcard-controls">
+          <button class="btn btn-secondary" id="prevBtn" type="button">Previous</button>
+          <button class="btn btn-primary" id="flipBtn" type="button">Flip Card</button>
+          <button class="btn btn-secondary" id="nextBtn" type="button">Next</button>
+        </div>
+
+        <div class="progress-track"><div class="progress-fill" id="flashProgress"></div></div>
+        <p class="panel-copy" id="flashStatus">Card 1 of 4</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

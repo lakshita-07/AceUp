@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AceUp | Processing Screen</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar glass-card reveal">
+      <a class="brand" href="index.html">AceUp</a>
+      <nav class="nav-links"><a href="setup-dashboard.html">Setup</a><a href="resource-selection.html">Resources</a><a href="results-dashboard.html">Results</a></nav>
+      <a class="ghost-link" href="panic-mode.html">Panic Mode</a>
+    </header>
+
+    <main class="dashboard-shell">
+      <section class="dashboard-hero glass-card reveal">
+        <p class="eyebrow">Processing screen</p>
+        <h1>AceUp is organizing your study material.</h1>
+        <p class="lead">This stage shows live progress, topic extraction, and AI-style output preparation in a clean, polished flow.</p>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="glass-card panel-card processing-card reveal">
+          <div>
+            <p class="mini-label">Live progress</p>
+            <h2>Processing resources</h2>
+            <p class="panel-copy">The system is scanning notes, topic tags, and reference material to generate ready-to-review output.</p>
+          </div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <div class="step-list">
+            <article class="step-item"><span class="step-dot"></span><div>Extracting high-yield concepts</div></article>
+            <article class="step-item"><span class="step-dot"></span><div>Matching topics to syllabus references</div></article>
+            <article class="step-item"><span class="step-dot"></span><div>Preparing summary and question prompts</div></article>
+          </div>
+          <div class="button-row"><a class="btn btn-primary" href="results-dashboard.html">View results</a></div>
+        </article>
+
+        <article class="glass-card panel-card reveal">
+          <p class="mini-label">Processing summary</p>
+          <h2>Current status</h2>
+          <div class="status-grid">
+            <article class="status-chip"><strong>72%</strong><span>Material scanned</span></article>
+            <article class="status-chip"><strong>18</strong><span>Topics identified</span></article>
+            <article class="status-chip"><strong>3</strong><span>Revision packs ready</span></article>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
