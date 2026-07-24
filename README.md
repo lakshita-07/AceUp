@@ -96,3 +96,7 @@ To reduce exam stress and improve learning efficiency by transforming scattered 
 ## 🏷️ Tagline
 
 **From Panic to Prepared.**
+
+
+**Hackathon Project:** AceUp was developed as part of the **Creative Apps – Battle #1: Creative Apps with GitHub Copilot** challenge. The project showcases AI-assisted development using **GitHub Copilot** to build an innovative and functional exam preparation platform, while integrating **Microsoft IQ intelligence** to enhance its AI-powered capabilities. AceUp aims to demonstrate how creative technology can solve real-world student challenges through an intuitive and engaging experience.
+
